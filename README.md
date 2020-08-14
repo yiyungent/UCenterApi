@@ -37,7 +37,7 @@ PM> Install-Package UCenterApi.AspNetCore
 ## 鸣谢
 
 - UCenter Api 参考自 <a href="https://github.com/hyperzlib/thinkphp5-ucenter-interface" target="_blank">thinkphp5-ucenter-interface</a>，感谢作者 hyperzlib 的贡献
-- UCenter Api 参考自 <a href="https://github.com/hyperzlib/thinkphp5-ucenter-interface" target="_blank">thinkphp5-ucenter-interface</a>，感谢作者 hyperzlib 的贡献
+- UCenter Api 参考自 <a href="https://github.com/dozer47528/UCenter-API-For-DotNet" target="_blank">thinkphp5-ucenter-interface</a>，感谢作者 dozer47528 的贡献
 
 ## Donate
 
