@@ -1,7 +1,32 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFrameworks>netstandard2.0;net40;net45;netcoreapp3.0;netcoreapp3.1</TargetFrameworks>
   </PropertyGroup>
+
+  <!-- 生成注释xml -->
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard2.0|AnyCPU'">
+    <DocumentationFile>bin\Release\netstandard2.0\UCenterApi.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net40|AnyCPU'">
+    <DocumentationFile>bin\Release\net40\UCenterApi.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net45|AnyCPU'">
+    <DocumentationFile>bin\Release\net45\UCenterApi.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netcoreapp3.0|AnyCPU'">
+    <DocumentationFile>bin\Release\netcoreapp3.0\UCenterApi.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netcoreapp3.1|AnyCPU'">
+    <DocumentationFile>bin\Release\netcoreapp3.1\UCenterApi.xml</DocumentationFile>
+  </PropertyGroup>
+  <!-- 条件编译 -->
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net40'">
+    <DefineConstants>NETFULL40</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net45'">
+    <DefineConstants>NETFULL45</DefineConstants>
+  </PropertyGroup>
+  
 
 </Project>
