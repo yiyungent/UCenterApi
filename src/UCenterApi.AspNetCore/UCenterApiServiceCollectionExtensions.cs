@@ -9,7 +9,7 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using UCenterApi.Api;
 using UCenterApi.Client;
-using UCenterApi.Common;
+using Microsoft.Extensions.Configuration;
 
 namespace UCenterApi.AspNetCore
 {
@@ -22,14 +22,12 @@ namespace UCenterApi.AspNetCore
             if (services == null)
                 throw new ArgumentNullException(nameof(services));
 
-            string jsonStr = configuration.GetSection("UCenterApi").Value;
-            JsonSerializerOptions jsonSerializerOptions = new JsonSerializerOptions();
-            jsonSerializerOptions.PropertyNameCaseInsensitive = true;
-            UCenterApiOptions options = JsonSerializer.Deserialize<UCenterApiOptions>(jsonStr, jsonSerializerOptions);
+            UCenterApiOptions options = new UCenterApiOptions();
+
+            configuration.GetSection("UCenterApi").Bind(options);
 
             services.AddSingleton(typeof(UCenterApiOptions), options);
-
-            services.AddSingleton<IUcConfig, UCenterApiOptions>();
+            services.AddSingleton<IUcConfig>(options);
 
             services.AddScoped<UcUtility>();
             services.AddTransient<UcClient>();

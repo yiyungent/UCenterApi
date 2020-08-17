@@ -5,7 +5,6 @@ using System.Runtime.CompilerServices;
 using System.Security.Cryptography;
 using System.Text;
 using System.Web;
-using UCenterApi.Common;
 
 namespace UCenterApi
 {
