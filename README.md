@@ -1,4 +1,5 @@
 <p align="center">
+<img src="docs/images/logo.png">
 </p>
 <h1 align="center">UCenterApi</h1>
 
@@ -6,6 +7,8 @@
 
 [![repo size](https://img.shields.io/github/repo-size/yiyungent/UCenterApi.svg?style=flat)]()
 [![LICENSE](https://img.shields.io/github/license/yiyungent/UCenterApi.svg?style=flat)](https://github.com/yiyungent/UCenterApi/blob/master/LICENSE)
+[![nuget](https://img.shields.io/nuget/v/UCenterApi.svg?style=flat)](https://www.nuget.org/packages/UCenterApi/)
+[![downloads](https://img.shields.io/nuget/dt/UCenterApi.svg?style=flat)](https://www.nuget.org/packages/UCenterApi/)
 
 
 <!-- [English](README_en.md) -->
@@ -30,8 +33,18 @@ PM> Install-Package UCenterApi
 PM> Install-Package UCenterApi.AspNetCore
 ```
 
+## 使用
+
+- [见示例(/examples)](https://github.com/yiyungent/UCenterApi/tree/master/examples)
+
+## 环境
+
+- 运行环境: .NET Framework (>= 4.0) or .NET Standard (>= 2.0)
+- 开发环境: Visual Studio Community 2019
+
 ## 相关项目
 
+- [UCenter-API-For-DotNet](https://github.com/dozer47528/UCenter-API-For-DotNet)
 - [UHub](https://github.com/yiyungent/UHub)
  
 ## 鸣谢
