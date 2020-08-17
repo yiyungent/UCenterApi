@@ -31,10 +31,10 @@
   
   <!-- 生成注释xml -->
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netcoreapp3.0|AnyCPU'">
-    <DocumentationFile>bin\Release\netcoreapp3.0\UCenterApi.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\netcoreapp3.0\UCenterApi.AspNetCore.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netcoreapp3.1|AnyCPU'">
-    <DocumentationFile>bin\Release\netcoreapp3.1\UCenterApi.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\netcoreapp3.1\UCenterApi.AspNetCore.xml</DocumentationFile>
   </PropertyGroup>
 
 </Project>
