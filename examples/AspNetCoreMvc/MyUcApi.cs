@@ -9,6 +9,10 @@ using UCenterApi.Model.ItemReceive;
 
 namespace AspNetCoreMvc
 {
+    /// <summary>
+    /// 继承 <see cref="BaseUcApi"/>, 实现其抽象方法, 方法中对应你的业务实现
+    /// 此 API 供 UCenter 调用, UCenter下发通知时就会调用此类中的对应方法
+    /// </summary>
     public class MyUcApi : BaseUcApi
     {
         public override ApiReturn DeleteUser(IEnumerable<int> ids)

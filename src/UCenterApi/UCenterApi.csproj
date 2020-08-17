@@ -2,6 +2,15 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net40;net45;netcoreapp3.0;netcoreapp3.1</TargetFrameworks>
+    <Version>0.0.1</Version>
+    <Company>yiyun</Company>
+    <Authors>yiyun</Authors>
+    <Description>轻松将你的 .NET 应用 与 UCenter(PHP)、DiscuzX 整合。</Description>
+    <Copyright>Copyright (c) 2020 yiyun</Copyright>
+    <RepositoryUrl>https://github.com/yiyungent/UCenterApi</RepositoryUrl>
+    <PackageLicenseUrl>https://github.com/yiyungent/UCenterApi/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageTags>UCenter UCenterApi</PackageTags>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <!-- 生成注释xml -->
@@ -20,6 +29,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netcoreapp3.1|AnyCPU'">
     <DocumentationFile>bin\Release\netcoreapp3.1\UCenterApi.xml</DocumentationFile>
   </PropertyGroup>
+  
   <!-- 条件编译 -->
   <PropertyGroup Condition="'$(TargetFramework)' == 'net40'">
     <DefineConstants>NETFULL40</DefineConstants>
@@ -28,5 +38,4 @@
     <DefineConstants>NETFULL45</DefineConstants>
   </PropertyGroup>
   
-
 </Project>

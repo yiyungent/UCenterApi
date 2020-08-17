@@ -43,6 +43,12 @@ namespace AspNetCoreMvc
                 app.UseExceptionHandler("/Home/Error");
             }
 
+            //app.Use(async (m, next) =>
+            //{
+            //    await m.Response.WriteAsync("1");
+            //});
+
+            // 注意: 不要使用 HTTP 跳转到 HTTPS
             //app.UseHttpsRedirection();
             app.UseStaticFiles();
 

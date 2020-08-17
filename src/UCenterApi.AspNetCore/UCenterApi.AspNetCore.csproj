@@ -2,6 +2,15 @@
 
   <PropertyGroup>
     <TargetFrameworks>netcoreapp3.0;netcoreapp3.1</TargetFrameworks>
+    <Version>0.0.1</Version>
+    <Company>yiyun</Company>
+    <Authors>yiyun</Authors>
+    <Description>轻松将你的 .NET 应用 与 UCenter(PHP)、DiscuzX 整合。</Description>
+    <Copyright>Copyright (c) 2020 yiyun</Copyright>
+    <RepositoryUrl>https://github.com/yiyungent/UCenterApi</RepositoryUrl>
+    <PackageLicenseUrl>https://github.com/yiyungent/UCenterApi/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageTags>UCenter UCenterApi ASP.NET Core</PackageTags>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,13 +23,12 @@
   
   <!-- 方便开发debug,与发布到nuget -->
   <ItemGroup Condition="'$(Configuration)' == 'Release'">
-    <PackageReference Include="UCenterApi" Version="0.1.0" />
+    <PackageReference Include="UCenterApi" Version="0.0.1" />
   </ItemGroup>
   <ItemGroup Condition="'$(Configuration)' == 'Debug'">
     <ProjectReference Include="..\UCenterApi\UCenterApi.csproj" />
   </ItemGroup>
   
-
   <!-- 生成注释xml -->
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netcoreapp3.0|AnyCPU'">
     <DocumentationFile>bin\Release\netcoreapp3.0\UCenterApi.xml</DocumentationFile>
